@@ -8,21 +8,21 @@ Steps to run project :
     mvn --version  
     output should be similar to : Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T22:11:47+05:30)
 3. go to project directory dropwizard-example on command line ( cd PATH_TO_dropwizard-example_dir)  
-    e.g. cd /Users/jitendragangwar/downloads/dropwizard-example
+    e.g. cd /Users/shubham/downloads/dropwizard-example
 4. Type  following commands on terminal then hit enter    
    i)  mvn clean compile package  
    ii) java -jar target/dropwizard-example-1.0-SNAPSHOT.jar server src/main/resources/local/config.yml 
 
-5. This project exposes following 2 apis   
-    1) /demo/name : A GET api , it simply returns a map , which contains application name  
+5. This project exposes following apis : 
+    1) /student/: A GET api , it simply returns a list , which contains student's details
     using curl you can hit this api as follows :   
-        curl -X GET http://localhost:8080/demo/name  
-    Response :: {"name":"Dropwizard Basic Example"}
-    2) /demo/dummy  : A POST api , it takes input an object consisting of firstName and lastname in json format  
-        and returns same object as json  
-     usage :   
-        curl -X POST -H "Content-Type: application/json"  -d '{"firstName":"Java","lastName":"Server"}' 'http://localhost:8080/demo/dummy'  
-     Response : {"firstName":"Java","lastName":"Server"}
+        curl -X GET http://localhost:8080/student/  
+        One can also search on the basis of studentId or emailId by:
+          curl -X GET http://localhost:8080/student/[studentId]
+          curl -X GET http://localhost:8080/student?name=[emailId]
+    
+    2) /college  : A GET api ,it simply returns a list , which contains student's details
+          'http://localhost:8080/college'
 
 
 Steps to develop project :
