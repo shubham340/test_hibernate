@@ -1,0 +1,14 @@
+codemeek/dropwizard/example/resources/StudentResource.class
+codemeek/dropwizard/example/DropApplication.class
+codemeek/dropwizard/example/models/College.class
+codemeek/dropwizard/example/dao/StudentDao.class
+codemeek/dropwizard/example/models/Address.class
+codemeek/dropwizard/example/filter/RequestFilter.class
+codemeek/dropwizard/example/DropApplication$1.class
+codemeek/dropwizard/example/dao/CollegeDao.class
+codemeek/dropwizard/example/DropConfiguration.class
+codemeek/dropwizard/example/models/Student.class
+codemeek/dropwizard/example/service/GACache.class
+codemeek/dropwizard/example/models/dto/StudentDTO.class
+codemeek/dropwizard/example/models/dto/CollegeDTO.class
+codemeek/dropwizard/example/resources/CollegeResource.class
